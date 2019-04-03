@@ -1,3 +1,9 @@
+execute pathogen#infect()
+
+" enable solarized
+set background=dark
+colorscheme solarized
+
 filetype plugin indent on " recognize file types
 syntax on                 " enable syntax highlighting
 
