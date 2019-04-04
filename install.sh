@@ -21,6 +21,10 @@ if [ "$(uname -s)" == "Linux" ]; then
   done
   echo
 
+  # sakura config
+  rm ~/.config/sakura/sakura.conf
+  ln -s ${PWD}/sakura.conf ${HOME}/.config/sakura/sakura.conf
+
   # get seccomp profile for containers running chrome/chromium 
   if [ ! -f ${HOME}/containers/chrome/chrome.json ]; then
     mkdir -p ${HOME}/containers/chrome
